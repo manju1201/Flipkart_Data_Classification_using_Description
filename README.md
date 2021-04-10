@@ -38,6 +38,7 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 ## Data Analysis
 * Dataset named “flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv” contains about 20000 rows and 15 columns/features.
 * Columns in the dataset.
+![alt text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/coulmns.png)
 * Some of the columns have missing values, they are: ‘retail_price’, ‘discounted_price’, ‘image’, ‘description’, ‘brand’ and ‘product_specifications’
 * Could not find any missing values in ‘product_rating’ and ‘overall_rating’ but the  value is "No rating available" for lot of rows
 * Splitted the category_level_tree into 6 levels of categories. 
