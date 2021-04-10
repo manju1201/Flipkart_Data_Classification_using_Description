@@ -41,7 +41,11 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 
 ![alt text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/coulmns.png)
 * Some of the columns have missing values, they are: ‘retail_price’, ‘discounted_price’, ‘image’, ‘description’, ‘brand’ and ‘product_specifications’
+
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/null_count.png)
 * Could not find any missing values in ‘product_rating’ and ‘overall_rating’ but the  value is "No rating available" for lot of rows
+
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/product_rating.png) ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/overall_rating.png)
 * Splitted the category_level_tree into 6 levels of categories. 
 * Lets see the “Unique” and “None” values in each of the category level
 * In Category Level 1, most of the data is in Clothing(6198), Jewellery(3531) and Footwear(1227) and there are no “None” Values.
