@@ -24,7 +24,7 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 ### Weights file:
 * Model-conv1d.h5
 
-The basic flow followed here is
+# The basic flow followed here is
 * Data Analysis
 * Data Visualization
 * Cleaning and Preprocessing
