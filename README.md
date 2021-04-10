@@ -11,8 +11,8 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 * Given data - [flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample](https://drive.google.com/file/d/1lwfF_6Mve5lA_DmtrE35Yg1dkEpoH5Jj/view?usp=sharing) 
 * After data Analysis - [1_Post_Data_Analysis_flipkart_com-ecommerce_sample](https://drive.google.com/file/d/1_hli8uUtPfBytvGYiuI6X724M9_sBF-v/view?usp=sharing)
 * After Cleaning Data - [2_cleaned_flipkart_com_ecommerce_sample](https://drive.google.com/file/d/1-HitZ9cZc8CIylLt2IQkkfiiygISNsTY/view?usp=sharing)
-* Data for CNN model -  * [decscription](https://drive.google.com/file/d/1-9mes59R-7A8mpAnRc1d1B1e6RXlmZm0/view?usp=sharing)
-                        * [Primanry Category](https://drive.google.com/file/d/1-ILU_evhgFLS9MeqqrnpU9SPpsgja60p/view?usp=sharing)
+* Data for CNN model - [decscription](https://drive.google.com/file/d/1-9mes59R-7A8mpAnRc1d1B1e6RXlmZm0/view?usp=sharing) and
+                        [Primary Category](https://drive.google.com/file/d/1-ILU_evhgFLS9MeqqrnpU9SPpsgja60p/view?usp=sharing)
 
 
 ### Ipython Notebooks:
