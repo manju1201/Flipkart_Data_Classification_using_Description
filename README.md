@@ -50,6 +50,7 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 * Splitted the category_level_tree into 6 levels of categories. 
 ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/required_data.png)
 * Lets see the “Unique” and “None” values in each of the category level
+
 ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/unique_values.png) ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/None_values.png)
 * In Category Level 1, most of the data is in Clothing(6198), Jewellery(3531) and Footwear(1227) and there are no “None” Values.
 ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_1_graph.png)
