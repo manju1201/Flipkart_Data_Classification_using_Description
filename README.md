@@ -3,15 +3,17 @@ Using Flipkart products data, building a model to predict the category using des
 
 ## Steps to Setup
 
-Step 1 : Clone the Repo : https://github.com/manju1201/Flipkart_Data_Classification_using_Description.git
+Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Data_Classification_using_Description.git```
 
 ## About files:
 
 ### Data files
-* Given data - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv  
-* After data Analysis - 1_Post_Data_Analysis_flipkart_com-ecommerce_sample.csv
-* After Cleaning Data - 2_cleaned_flipkart_com_ecommerce_sample.csv
-* Data for CNN model - 
+* Given data - [flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample](https://drive.google.com/file/d/1lwfF_6Mve5lA_DmtrE35Yg1dkEpoH5Jj/view?usp=sharing) 
+* After data Analysis - [1_Post_Data_Analysis_flipkart_com-ecommerce_sample](https://drive.google.com/file/d/1_hli8uUtPfBytvGYiuI6X724M9_sBF-v/view?usp=sharing)
+* After Cleaning Data - [2_cleaned_flipkart_com_ecommerce_sample](https://drive.google.com/file/d/1-HitZ9cZc8CIylLt2IQkkfiiygISNsTY/view?usp=sharing)
+* Data for CNN model -  * [decscription](https://drive.google.com/file/d/1-9mes59R-7A8mpAnRc1d1B1e6RXlmZm0/view?usp=sharing)
+                        * [Primanry Category](https://drive.google.com/file/d/1-ILU_evhgFLS9MeqqrnpU9SPpsgja60p/view?usp=sharing)
+
 
 ### Ipython Notebooks:
 * 1_Data_Analysis_&_Visualization.ipynb 
@@ -21,6 +23,17 @@ Step 1 : Clone the Repo : https://github.com/manju1201/Flipkart_Data_Classificat
 
 ### Weights file:
 * Model-conv1d.h5
+
+The basic flow followed here is
+* Data Analysis
+* Data Visualization
+* Cleaning and Preprocessing
+* Finding and Cleaning the Primary category label
+* Countvectorizer
+* Models
+* Results
+* Improvements
+* Resources
 
 ## Data Analysis
 * Dataset named “flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv” contains about 20000 rows and 15 columns/features.
@@ -45,7 +58,7 @@ Step 1 : Clone the Repo : https://github.com/manju1201/Flipkart_Data_Classificat
 * All the preprocessing is done and the cleaned tokens are combined back into sentences.
 * There are about 2 null values in description, as description is our main feature I dropped those two empty rows.
 
-## Finding Primary Category and Cleaning the Primary category label
+## Finding and Cleaning the Primary category label
 * We have about 266 labels and 0 None values in Category level 1 whereas 224 labels and 328 None values in Category level 2
 * As there are no None values in Category level 1 , this is considered as the Primary Category for the further implementation.
 * Looking at the plot we can conclude the data is not equally distributed and most of them are having subcategory value 1. 
@@ -79,11 +92,11 @@ Controls sampling of the features to consider when looking for the best split at
 #### CNN Model
 * To improve prediction I have also tried CNN model
 * After all the preprocessing I have also found class_weights 
-* Data is not equally distributed so assigned higher weights to lower classes and lower weights to higher classes.
+    * Data is not equally distributed so assigned higher weights to lower classes and lower weights to higher classes.
 
-Hyperparameters used
-Epoch = 20
-Bactch_size = 32
+##### Hyperparameters used
+* Epoch = 20
+* Bactch_size = 32
 
 * This CNN model is built with 6 layers
     * Embedding layer - Embedding layer enables us to convert each word into a fixed length vector of defined size. The resultant vector is a dense one with real values instead of just 0's and 1's. The fixed length of word vectors helps us to represent words in a better way along with reduced dimensions.
@@ -104,7 +117,7 @@ Bactch_size = 32
 
 * Categorical accuracy - Calculates how often predictions match with one-hot labels.
 
-#### Results
+## Results
 
 ##### Multinomial naive bayes
   * Accuracy - 93.8%
@@ -127,9 +140,7 @@ Bactch_size = 32
 
 
 ### Resources
-
-
-
-
-
-
+* [Bar Charts and Heatmaps](https://www.kaggle.com/alexisbcook/bar-charts-and-heatmaps)
+* [Data Cleaning](https://www.kaggle.com/learn/data-cleaning)
+* [Basic Text Classification](https://www.kaggle.com/matleonard/text-classification)
+* [CNN Model Refernce](https://realpython.com/python-keras-text-classification/#choosing-a-data-set)
