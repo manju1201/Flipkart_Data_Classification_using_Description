@@ -8,18 +8,19 @@ Step 1 : Clone the Repo : https://github.com/manju1201/Flipkart_Data_Classificat
 ## About files:
 
 ### Data files
-Given data - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv  
-After data Analysis - 1_Post_Data_Analysis_flipkart_com-ecommerce_sample.csv
-After Cleaning Data - 2_cleaned_flipkart_com_ecommerce_sample.csv
+* Given data - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv  
+* After data Analysis - 1_Post_Data_Analysis_flipkart_com-ecommerce_sample.csv
+* After Cleaning Data - 2_cleaned_flipkart_com_ecommerce_sample.csv
+* Data for CNN model - 
 
 ### Ipython Notebooks:
-1_Data_Analysis_&_Visualization.ipynb 
-2_Cleaning_Data.ipynb
-3_Product_Classification_Using_ML_Models.ipynb
-4_Product_Classification_Using_CNN_Model.ipynb
+* 1_Data_Analysis_&_Visualization.ipynb 
+* 2_Cleaning_Data.ipynb
+* 3_Product_Classification_Using_ML_Models.ipynb
+* 4_Product_Classification_Using_CNN_Model.ipynb
 
 ### Weights file:
-Model-conv1d.h5
+* Model-conv1d.h5
 
 ## Data Analysis
 * Dataset named “flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample - flipkart_com-ecommerce_sample.csv” contains about 20000 rows and 15 columns/features.
@@ -86,10 +87,15 @@ Bactch_size = 32
 
 * This CNN model is built with 6 layers
     * Embedding layer - Embedding layer enables us to convert each word into a fixed length vector of defined size. The resultant vector is a dense one with real values instead of just 0's and 1's. The fixed length of word vectors helps us to represent words in a better way along with reduced dimensions.
+    
     * Dropout layer - The Dropout layer randomly sets input units to 0 with a frequency of rate at each step during training time, which helps prevent overfitting. Here the rate is 0.1.
+    
     * Conv1D layer - This layer creates a convolution kernel that is convolved with the layer input over a single spatial dimension to produce a tensor of outputs. Here stride-1, valid padding, filter size of 300 is used.
+    
     * Global Max Pool 1D - Downsamples the input representation by taking the maximum value over the time dimension.
+    
     * Dense Layer -  This is a densely-connected Neural Network layer.
+    
     * Activation - Applying an sigmoid activation function to an output.
 
 * Adam Optimizer - Adam optimization is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order moments.
