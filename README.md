@@ -45,13 +45,20 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/null_count.png)
 * Could not find any missing values in ‘product_rating’ and ‘overall_rating’ but the  value is "No rating available" for lot of rows
 
-![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/product_rating.png) ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/overall_rating.png)
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/product_rating.png)
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/overall_rating.png)
 * Splitted the category_level_tree into 6 levels of categories. 
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/required_data.png)
 * Lets see the “Unique” and “None” values in each of the category level
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/unique_values.png) ![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/None_values.png)
 * In Category Level 1, most of the data is in Clothing(6198), Jewellery(3531) and Footwear(1227) and there are no “None” Values.
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_1_graph.png)
 * In category level 2, here also the majority data is in Clothing like women’s clothing(3901) and Men’s Clothing(1773) and we can see about 328 “None” values.
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_2_graph.png)
 * In Category level 3 also Clothing that is Western wear(1981) is in the top but “None” values in this level is too high that is about 1457.
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_3_graph.png)
 * In Category level 4, the top result itself is “None”, about 5876 null values. So we can conclude that this cant be our primary category for prediction.
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_4_graph.png)
 * In category levels 5 and 6 also has about 10642 and 15552 respectively.
 
 ## Cleaning and Preprocessing Data
@@ -67,6 +74,7 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 ## Finding and Cleaning the Primary category label
 * We have about 266 labels and 0 None values in Category level 1 whereas 224 labels and 328 None values in Category level 2
 * As there are no None values in Category level 1 , this is considered as the Primary Category for the further implementation.
+![alt_text](https://github.com/manju1201/Flipkart_Data_Classification_using_Description/blob/main/Images/cat_level_1_graph.png)
 * Looking at the plot we can conclude the data is not equally distributed and most of them are having subcategory value 1. 
 * First I thought to drop the subcategory rows which have less than 15 values.
 * As it is mentioned in the problem that data can be cleaned and processed therefore I did some manual work so that labels are reduced from 266 to 27.
