@@ -84,7 +84,8 @@ Step 1 : Clone the Repo :  ```git clone https://github.com/manju1201/Flipkart_Da
 * One row was dropped, as its primary label could not be found due to lack of data.
 * Data is prepared, the model is built on 19997 rows/examples with 27 labels.
 
-## Countvectorizer
+## Tokenizer
+#### Countvectorizer
 * The CountVectorizer provides a simple way to both tokenize a collection of text documents and build a vocabulary of known words, but also to encode new documents using that vocabulary.
 
 # Models
